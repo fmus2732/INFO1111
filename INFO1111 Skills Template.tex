@@ -1,0 +1,198 @@
+\documentclass[a4paper, 11pt]{report}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{fix-cm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage{hyperref} 
+
+\geometry{ margin=30mm }
+\counterwithin{subsection}{section}
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\thesection\arabic{subsection}.}
+\usepackage{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftsecindent}{2.2em}
+\setlength{\cftsubsecindent}{4.2em}
+\setlength{\cftsecnumwidth}{2em}
+\setlength{\cftsubsecnumwidth}{2.5em}
+\setcounter{tocdepth}{2} %
+
+\begin{document}
+\titleformat{\section}
+{\normalfont\fontsize{15}{0}\bfseries}{\thesection}{1em}{}
+\titlespacing{\section}{0cm}{0.5cm}{0.15cm}
+\titleformat{\subsection}
+{\normalfont\fontsize{13}{0}\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing{\section}{0cm}{0.5cm}{0.15cm}
+
+%=======================================================================================
+
+% #########################
+% IMPORTANT - Add student names here!
+% e.g. \newcommand{\stud1}{LOWE, David}
+\newcommand{\studA}{{FAHMID, MUSTAKIM}}
+\newcommand{\studB}{{FAHMID, MUSTAKIM}}
+\newcommand{\studC}{{FAHMID, MUSTAKIM}}
+\newcommand{\studD}{{FAHMID, MUSTAKIM}}
+%
+% IMPORTANT - Then give your SIDs
+\newcommand{\sidA}{{520241060}}
+\newcommand{\sidB}{{520241060}}
+\newcommand{\sidC}{{520241060}}
+\newcommand{\sidD}{{520241060}}
+%
+% IMPORTANT - And then update which major each student will focus on
+\newcommand{\majA}{{Computer Science}}
+\newcommand{\majB}{{Data Science}}
+\newcommand{\majC}{{SW Development}}
+\newcommand{\majD}{{Cyber Security}}
+% #########################
+
+
+\pagenumbering{Alph}
+\begin{titlepage}
+\begin{flushright}
+\includegraphics[width=4cm]{USyd}\\[1cm]
+\end{flushright}
+
+\begin{centering}
+\textbf{\huge INFO1111: Computing 1A Professionalism}\\[0.75cm]
+\textbf{\huge 2024 Semester 1}\\[2cm]
+\textbf{\huge Skills: Team Project Report}\\[2cm]
+
+\textbf{\large Submission number: 2}\\[0.5cm]
+\textbf{\large \href{https://github.com/fmus2732/INFO1111}{Github link: https://github.com/fmus2732/INFO1111}}\\[0.75cm]
+\textbf{\huge Team Members:}\\[0.75cm]
+
+\begin{tabular}{|p{0.25\textwidth}|p{0.13\textwidth}|p{0.12\textwidth}|p{0.12\textwidth}|p{0.22\textwidth}|}
+	\hline
+	\multirow{2}{*}{Name} & \multirow{2}{*}{Student ID} & Target * & Target * & \multirow{2}{*}{Selected Major} \\
+	 & & Foundation & Advanced & \\
+	\hline
+	\hline
+	\raggedright{\studA} & \sidA & A & NA & \majA \\
+	\hline
+	\raggedright{\studB} & \sidB & A & NA & \majB \\
+	\hline
+	\raggedright{\studC} & \sidC & A & NA & \majC \\
+	\hline
+	\raggedright{\studD} & \sidD & A & NA & \majD \\
+	\hline
+\end{tabular}
+\\[0.5cm]
+\end{centering}
+
+* Use the following codes:
+\begin{itemize}
+\setlength\itemsep{0em}
+\item NA = Not attempting in this submission
+\item A = Attempting (not previously attempting)
+\item AW = Attempting (achieved weak in a previous submission) 
+\item AG = Attempting (achieved good in a previous submission)
+\item S = Already achieved strong in a previous submission
+\end{itemize}
+
+\thispagestyle{empty}
+\end{titlepage}
+\pagenumbering{arabic}
+
+
+%=======================================================================================
+
+\tableofcontents
+
+
+%=======================================================================================
+
+\newpage
+\section{Task 1 (Foundation): Core Skills}
+
+The first task is to define the fundamental technical competencies required for various computer majors, such as cyber security, software development, data science, and computer science. The objective of this work is to prioritize the essential skills needed in each profession in accordance with industry expectations. We may learn more about the fundamental technical abilities required for success in a variety of computer fields by looking at these important abilities. Looking at the Skills Framework for the Information Age (SFIA) provides a structured approach to identifying and developing key technical skills essential for different computing disciplines. ~\cite{sfia}. 
+
+
+
+% =======================================================
+
+\subsection{Skills for \majA: \studA}
+
+\begin{enumerate}
+    \item Machine Learning (MLNG):
+Artificial Intelligence and Machine Learning (AIML) are significant advances in computer science because they spur innovation in many fields. To create intelligent systems that can learn from data and adapt, it is essential to have the capacity to construct, train, and implement AI/ML models. Understanding deep learning methods, neural networks, and complicated algorithms is necessary for jobs like computer vision, predictive analytics, and natural language processing. In addition to improving problem-solving skills, proficiency in AI/ML provides doors for working on innovative projects that have the potential to have a big influence on sectors like healthcare, finance, and autonomous systems.
+
+    \item Technology Service Management (ITMG):
+Another essential computer science ability is cloud computing, which offers scalable and adaptable computing resources via platforms like Google CloudPlatform (GCP), Microsoft Azure, and Amazon Web Services (AWS). Deploying and managing applications in a cloud environment requires an understanding of cloud infrastructures, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). This competence also includes understanding cost management, deployment methodologies, and cloud security. Because of the cloud's scalability and cost-effectiveness, organizations are moving more and more to it. Professionals with experience in cloud computing can create, deploy, and oversee reliable cloud infrastructures that foster innovation and company operations.
+
+    \item Information Management (IRMG):
+Finally, processing and analyzing enormous volumes of data to find patterns, trends, and insights that guide decision-making is known as Big Data Analytics (BDA). Proficiency in big data technologies, including Hadoop, Spark, and NoSQL databases, along with proficiency in data mining, statistical analysis, and data visualization tools like Tableau or Power BI, are prerequisites for this competence. The capacity to evaluate and decipher big datasets is essential in the age of data-driven decision-making. Professionals with big data analytics expertise may manage intricate data pipelines and carry out in-depth studies that produce insights that can be put into practice, improving consumer experiences, corporate strategy, and new product development.
+
+\end{enumerate}
+
+\subsection{Skills for \majB: \studB}
+
+\begin{enumerate}
+	\item Data Engineering (DENG)
+Building and maintaining the infrastructure needed for large-scale data processing requires data engineering. This include integrating data from several sources, building data pipelines, and guaranteeing data quality. Data scientists can access and handle the enormous volumes of data required for analysis by becoming proficient in data engineering. For this position, proficiency with technologies like Apache Spark and Hadoop as well as programming languages like Python and SQL are essential. Because it guarantees that the data used for analysis is trustworthy, easily available, and prepared in a way that promotes insightful conclusions, data engineering is fundamental to analysis.
+	
+	\item Statistical Analysis and Data Mining (DTAN)
+To extract significant patterns and insights from data, statistical analysis and data mining are essential. This ability entails analyzing complicated datasets using statistical approaches, machine learning algorithms, and data mining techniques. It is essential to be proficient with machine learning libraries (such as Scikit-learn, TensorFlow) and statistical applications (such as R, SAS). Making data-driven decisions requires the use of these strategies for hypothesis testing, predictive modeling, and trend identification. Gaining proficiency in these abilities helps data scientists find hidden patterns in data, which produces useful insights and helps them make wise decisions.
+
+	\item Data Visualization (VISL)
+For complicated data insights to be communicated in a way that is both comprehensible and practical, data visualization is essential. This ability entails utilizing programs like Tableau, Power BI, or D3.js to create visual representations of data. Better decision-making is enabled by effective data visualization, which aids stakeholders in understanding trends, patterns, and outliers in the data. It simplifies complicated analysis into understandable visualizations so that stakeholders who are not technical can better understand the consequences of data discoveries. Proficiency in data visualization methodologies guarantees that data scientists can efficiently communicate their discoveries, propelling company objectives and strategic endeavors.
+
+\end{enumerate}
+
+\subsection{Skills for \majC: \studC}
+
+\begin{enumerate}
+	
+	\item Technology service management (ITMG)
+Streamlining the software development lifecycle and enhancing communication between the development and operations teams need the application of DevOps methods. This ability includes controlling infrastructure through code and automating build, test, and deployment procedures. It is essential to have proficiency with DevOps processes and tools (e.g., CI/CD, infrastructure as code), such as Jenkins, Docker, and Kubernetes. DevOps guarantees greater deployment frequency, quicker software update delivery, and more dependable software releases. Additionally, it makes it possible for businesses to more effectively provide value to clients and react swiftly to shifting market demands.
+
+	\item Testing (TEST)
+Software application quality and dependability can only be guaranteed via testing. This ability entails creating and executing tests to find flaws and errors in the program. It is essential to have proficiency with testing approaches and frameworks (e.g., TDD, BDD, JUnit, Selenium). Testing verifies that the program satisfies the criteria and operates as anticipated in a range of scenarios. Additionally, it lessens the possibility of expensive mistakes in the finished product by assisting in the early detection and correction of problems.
+
+	\item Software Design (DESN):
+Creating scalable and reliable software applications requires careful consideration of software architecture. This ability entails designing software components, establishing interfaces, and producing high-level architectural designs. It is necessary to possess expertise in software design patterns and concepts, such as MVC and MVVM and SOLID. It is easier to incorporate new features and updates when software is designed to be modular, maintainable, and extendable. As the cornerstone of the whole software development process, this ability guarantees that the finished product satisfies both functional and non-functional criteria.
+
+\end{enumerate}
+
+\subsection{Skills for \majD: \studD}
+
+\begin{enumerate}
+
+	\item Information Security (SCTY):
+Proficiency in ethical hacking and penetration testing is crucial in detecting and addressing security flaws within networks and systems. This ability entails applying hacking methods to find gaps in security measures, enabling companies to safeguard and fix their systems. It is important to have proficiency with tools such as Metasploit, Nmap, and Wireshark. By seeing possible dangers and weaknesses before malevolent hackers can take advantage of them, ethical hackers are essential to maintaining the security of systems and networks.
+
+	\item Security Operations (SCAD)
+	To monitor, identify, and react to security problems in real-time, one has to possess security operations abilities. This ability entails analyzing security logs and looking for suspicious behavior using security information and event management (SIEM) solutions. It is essential to be proficient in threat intelligence, incident response protocols, and security best practices. Teams dedicated to security operations are vital to an organization's security posture because they promptly detect and address security issues to reduce their effect and stop them from happening again.
+
+	\item Cryptography (CRYP):
+Proficiency in cryptography is vital to safeguard information and correspondence against unwanted access and manipulation. Understanding encryption protocols, key management, and cryptographic algorithms are necessary for this competence. Understanding and using cryptography algorithms effectively protects data from unauthorized users and eavesdroppers while it's in transit. Cryptography is a fundamental component of cyber security since it is necessary to guarantee the confidentiality, integrity, and legitimacy of sensitive data.
+
+\end{enumerate}
+
+
+%=======================================================================================
+
+\newpage
+\section{Submission contribution overview}
+
+I modified the collaborative method for this submission by working alone through the whole process. The project was originally intended to be a team effort, but I divided up the work to make sure all the requirements were met. I set aside particular hours for each task to plan and arrange the workload, concentrating on locating and gathering the essential technical abilities for Computer Science in accordance with the (SFIA) framework. I made sure all the components, including the cover page, skills description, and references, were comprehensive and structured appropriately by integrating the content into the LaTeX template that was given. I made a team repository, cloned it to my desktop, and added the required files to administer the GitHub repository. I used the command line to build the LaTeX document and took screenshots to record the procedure. I carefully reviewed the finished document to make sure it was accurate and followed submission criteria after committing and pushing it to the remote repository. This experience reinforced the value of flexibility and efficient time management because I oversaw every facet of the project without varying in my level of commitment.
+
+%=======================================================================================
+
+\newpage
+
+\bibliographystyle{ieeetran}
+\bibliography{main}
+
+\end{document}
+\end{report}
